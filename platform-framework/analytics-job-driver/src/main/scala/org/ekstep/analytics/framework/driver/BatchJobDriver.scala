@@ -26,6 +26,7 @@ object BatchJobDriver {
                 _process(config, models);
             } finally {
                 CommonUtil.closeSparkContext();
+                JobLogger.log("Spark is closed.."+ sc.isStopped, None, INFO);
                 /*
                  * Clearing previous job persisting rdd, in case of the job got failed
                  * */
