@@ -10,7 +10,9 @@ import org.joda.time.DateTime
 import com.datastax.spark.connector.cql.CassandraConnector
 import org.ekstep.analytics.updater.UpdateTextbookSnapshotDB
 import org.ekstep.analytics.model.SparkGraphSpec
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestTextbookSnapshotMetricCreationModel extends SparkGraphSpec(null) {
 
     "TextbookSnapshotMetricCreationModel" should "execute TextbookSnapshotMetricCreationModel successfully" in {

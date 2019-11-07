@@ -6,7 +6,9 @@ import org.ekstep.analytics.framework.JobConfig
 import org.ekstep.analytics.framework.Query
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.framework.Dispatcher
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestRecommendationEngineJob extends SparkSpec(null) {
 
     "Recommendation Engine Job" should "execute the job and shouldn't throw any exception" in {

@@ -7,9 +7,11 @@ import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.vidyavaani.job._
 import org.ekstep.analytics.model.SparkSpec
+import org.scalatest.Ignore
 /**
  * @author yuva
  */
+@Ignore @deprecated
 class TestTextbookSessionSummarizer extends SparkSpec(null) {
     it should "execute TextbookSessionSummarizer job and won't throw any Exception" in {
         val config = JobConfig(Fetcher("local", None, Option(Array(Query(None, None, None, None, None, None, None, None, None, Option("src/test/resources/textbook-session-summary/test1.log"))))), null, None, "org.ekstep.analytics.model.TextbookSessionSummaryModel", None, Option(Array(Dispatcher("console", Map("printEvent" -> false.asInstanceOf[AnyRef])))), Option(10), Option("TestTextbookSessionSummarizer"))

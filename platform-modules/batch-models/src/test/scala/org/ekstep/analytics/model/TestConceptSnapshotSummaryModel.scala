@@ -7,7 +7,7 @@ import org.ekstep.analytics.framework.conf.AppConf
 import org.ekstep.analytics.framework.dispatcher.GraphQueryDispatcher
 import org.scalatest.Ignore
 
-@Ignore
+@Ignore @deprecated
 class TestConceptSnapshotSummaryModel extends SparkGraphSpec(null) {
   
     "ConceptSnapshotSummaryModel" should "generate concept snapshot summary events" in {

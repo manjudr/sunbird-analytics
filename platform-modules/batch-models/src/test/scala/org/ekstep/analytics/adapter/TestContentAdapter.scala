@@ -3,10 +3,12 @@ package org.ekstep.analytics.adapter
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.model.BaseSpec
 import org.scalamock.scalatest.MockFactory
+import org.scalatest.Ignore
 
 /**
  * @author Santhosh
  */
+@Ignore @deprecated
 class TestContentAdapter extends BaseSpec with MockFactory{
   
     ignore should "return content list using v2 api" in {

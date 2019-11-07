@@ -7,7 +7,9 @@ import com.datastax.spark.connector.cql.CassandraConnector
 import org.apache.commons.lang3.StringUtils
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.framework.DerivedEvent
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestGenieUsageSummaryModel extends SparkSpec(null) {
 
     it should "test the summary for one month of data having only two pre-registered tags" in {

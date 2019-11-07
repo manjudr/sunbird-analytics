@@ -8,7 +8,9 @@ import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.framework.util.CommonUtil
 import org.joda.time.DateTime
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestContentModelUpdater extends SparkSpec(null) {
     
     "ContentModelUpdater" should "execute the job and shouldn't throw any exception" in {

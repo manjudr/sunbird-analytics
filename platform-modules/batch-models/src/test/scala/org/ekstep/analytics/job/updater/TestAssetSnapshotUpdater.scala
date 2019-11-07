@@ -6,7 +6,9 @@ import org.ekstep.analytics.framework.Fetcher
 import org.ekstep.analytics.framework.Query
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.framework.Dispatcher
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestAssetSnapshotUpdater extends SparkSpec(null) {
   
     "AssetSnapshotUpdater" should "execute the job and shouldn't throw any exception" in {

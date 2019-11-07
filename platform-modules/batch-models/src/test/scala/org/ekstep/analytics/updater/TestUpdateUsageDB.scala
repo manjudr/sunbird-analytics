@@ -18,10 +18,12 @@ import org.ekstep.analytics.framework.util.CommonUtil
 import org.ekstep.analytics.job.ReplaySupervisor
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.Dispatcher
+
 import scala.collection.mutable.Buffer
 import org.ekstep.analytics.framework.RegisteredTag
 import org.ekstep.analytics.util.BloomFilterUtil
-
+import org.scalatest.Ignore
+@Ignore @deprecated
 class TestUpdateUsageDB extends SparkSpec(null) {
 
     override def beforeAll() {

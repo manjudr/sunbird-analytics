@@ -8,6 +8,7 @@ import org.ekstep.analytics.framework.util.CommonUtil
 /**
  * @author Santhosh
  */
+@Ignore @deprecated
 class TestUpdateLearnerActivityDB extends SparkSpec(null) {
   
     "UpdateLearnerActivityDB" should "parse learner activity summary and populater learner snapshot" in {

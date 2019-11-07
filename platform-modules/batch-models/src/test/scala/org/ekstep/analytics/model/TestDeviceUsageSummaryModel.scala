@@ -6,7 +6,9 @@ import org.ekstep.analytics.framework.Event
 import org.ekstep.analytics.framework.util.JSONUtils
 import com.datastax.spark.connector.cql.CassandraConnector
 import org.ekstep.analytics.framework.V3Event
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestDeviceUsageSummaryModel extends SparkSpec(null) {
 
     "DeviceUsageSummaryModel" should "generate DeviceUsageSummary events from a sample file and pass all positive test cases" in {

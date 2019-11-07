@@ -11,7 +11,9 @@ import org.ekstep.analytics.updater.DeviceSpec
 import org.apache.spark.sql.SQLContext
 import org.apache.spark.sql.Row
 import org.apache.spark.sql.types._
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestDeviceUsageTransformer extends SparkSpec(null) {
   
     "DeviceUsageTransformer" should "perform binning and outlier on DUS and device_spec" in {

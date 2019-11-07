@@ -6,7 +6,9 @@ import org.ekstep.analytics.framework.Fetcher
 import org.ekstep.analytics.framework.Query
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.util.JSONUtils
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestCSVDumpJob extends SparkSpec(null) {
 
     "CSVDumpJob" should "execute csv dump job on raw telemetry data" in {

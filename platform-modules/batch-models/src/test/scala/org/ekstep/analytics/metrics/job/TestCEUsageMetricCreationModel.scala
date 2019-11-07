@@ -10,7 +10,9 @@ import org.ekstep.analytics.model.SparkSpec
 import org.joda.time.DateTime
 import com.datastax.spark.connector.cql.CassandraConnector
 import org.ekstep.analytics.updater.UpdateContentEditorUsageDB
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestCEUsageMetricCreationModel extends SparkSpec(null) {
   
     "CEUsageMetricCreationModel" should "execute CEUsageMetricCreationModel successfully" in {

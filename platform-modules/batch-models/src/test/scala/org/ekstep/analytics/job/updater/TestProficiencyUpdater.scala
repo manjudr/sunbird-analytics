@@ -7,7 +7,9 @@ import org.ekstep.analytics.framework.Query
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.framework.Filter
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestProficiencyUpdater extends SparkSpec(null) {
     
     "ProficiencyUpdaterJob" should "execute the job without throwing exception" in {

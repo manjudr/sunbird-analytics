@@ -6,7 +6,9 @@ import org.ekstep.analytics.framework.DerivedEvent
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.OutputDispatcher
 import org.ekstep.analytics.framework.conf.AppConf
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestItemSummaryModel extends SparkSpec(null) {
 
     "ItemSummaryModel" should "generate item summaries" in {

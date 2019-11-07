@@ -7,7 +7,9 @@ import org.ekstep.analytics.framework.Query
 import org.ekstep.analytics.framework.Filter
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.util.JSONUtils
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestContentSideloadingSummarizer extends SparkSpec(null) {
   
     "ContentSideloadingSummarizer" should "execute ContentSideloadingSummary job and won't throw any Exception" in {

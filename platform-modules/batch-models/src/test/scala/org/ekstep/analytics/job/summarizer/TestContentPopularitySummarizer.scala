@@ -6,7 +6,9 @@ import org.ekstep.analytics.framework.Fetcher
 import org.ekstep.analytics.framework.Query
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.framework.Dispatcher
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestContentPopularitySummarizer extends SparkSpec(null) {
 	
 	"ContentPopularitySummarizer" should "execute the job and shouldn't throw any exception" in {

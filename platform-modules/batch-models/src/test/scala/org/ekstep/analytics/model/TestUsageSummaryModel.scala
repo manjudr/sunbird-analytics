@@ -3,10 +3,11 @@ package org.ekstep.analytics.model
 import org.ekstep.analytics.framework.DerivedEvent
 import org.ekstep.analytics.framework.RegisteredTag
 import org.ekstep.analytics.util.Constants
-
 import com.datastax.spark.connector.cql.CassandraConnector
 import com.datastax.spark.connector.toRDDFunctions
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestUsageSummaryModel extends SparkSpec(null) {
 
     "UsageSummaryModel" should "generate ME summary events for (all, per user, per content, per tag, per user & per content, per tag & per user, per tag & per content) dimensions" in {

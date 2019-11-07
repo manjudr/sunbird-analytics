@@ -8,7 +8,9 @@ import org.joda.time.DateTime
 import org.ekstep.analytics.framework.dispatcher.GraphQueryDispatcher
 import org.ekstep.analytics.util.DBUtil
 import org.ekstep.analytics.util.Constants
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestAssetSnapshotSummaryModel extends SparkGraphSpec(null) {
 
     override def beforeAll() {

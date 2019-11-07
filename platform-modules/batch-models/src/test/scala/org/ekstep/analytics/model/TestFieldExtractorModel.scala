@@ -6,7 +6,9 @@ import org.ekstep.analytics.framework.Filter
 import org.ekstep.analytics.framework.OutputDispatcher
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.util.DerivedEvent
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestFieldExtractorModel extends SparkSpec(null) {
     
     "FieldExtractorModel" should "extract the fields from raw telemetry" in {

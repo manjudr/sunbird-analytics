@@ -10,7 +10,9 @@ import org.ekstep.analytics.framework.Query
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.model.ModelMapping
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestMonitorSummarizer extends SparkSpec(null) {
 
     "MonitorSummarizer" should "execute MonitorSummaryModel job and won't throw any Exception" in {

@@ -5,9 +5,9 @@ import org.ekstep.analytics.framework.util.{CommonUtil, JSONUtils}
 import org.scalamock.scalatest.MockFactory
 import org.scalatest._
 
-class TestETBCoverageSummaryModel extends FlatSpec with Matchers with MockFactory {
+class TestETBCoverageSummaryModel extends SparkSpec with Matchers with MockFactory {
 
-    val sc = CommonUtil.getSparkContext(1, "TestAnalyticsCore")
+    //var sc = CommonUtil.getSparkContext(1, "TestAnalyticsCore")
 
     "getLastPublishedContents Method" should "fetch last published contents" in {
         val config = Map("fromDate" -> "2018-11-09", "toDate" -> "2018-11-09")

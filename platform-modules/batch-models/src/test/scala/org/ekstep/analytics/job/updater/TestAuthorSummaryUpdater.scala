@@ -1,13 +1,14 @@
 package org.ekstep.analytics.job.updater
 
 import org.ekstep.analytics.model.SparkSpec
-
 import org.ekstep.analytics.framework.JobConfig
 import org.ekstep.analytics.framework.Fetcher
 import org.ekstep.analytics.framework.Query
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.util.JSONUtils
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestAuthorSummaryUpdater extends SparkSpec(null) {
 
     it should "execute AuthorSummaryUpdater job and won't throw any Exception" in {

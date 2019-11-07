@@ -6,10 +6,13 @@ import com.datastax.spark.connector._
 import com.datastax.spark.connector.cql.CassandraConnector
 import org.ekstep.analytics.util.Constants
 import org.ekstep.analytics.creation.model.CreationEvent
+import org.scalatest.Ignore
 
 /**
  * @author Santhosh
+  *
  */
+@Ignore @deprecated
 class TestUpdateAppObjectCacheDB extends SparkSpec(null) {
     
     override def beforeAll() {

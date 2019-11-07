@@ -7,7 +7,9 @@ import org.ekstep.analytics.framework.OutputDispatcher
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.util.CommonUtil
 import org.ekstep.analytics.util.DerivedEvent
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestGenieStageSummaryModel extends SparkSpec(null) {
   
     "GenieStageSummaryModel" should "generate genie stage summary in case of ideal time between events" in {

@@ -6,10 +6,12 @@ import org.ekstep.analytics.util.SessionBatchModel
 import org.apache.spark.rdd.RDD
 import org.apache.spark.SparkContext
 import org.ekstep.analytics.framework.DerivedEvent
+import org.scalatest.Ignore
 /**
  * @author yuva
  */
 
+@Ignore @deprecated
 class TestTextbookUsageSummaryModel extends SparkSpec(null) {
 
     "TextbookUsageSummaryModel" should "generate usage summary events" in {

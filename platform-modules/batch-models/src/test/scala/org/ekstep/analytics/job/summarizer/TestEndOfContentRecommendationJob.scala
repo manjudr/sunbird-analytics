@@ -7,7 +7,9 @@ import org.ekstep.analytics.framework.JobConfig
 import org.ekstep.analytics.framework.Fetcher
 import org.ekstep.analytics.framework.Query
 import org.ekstep.analytics.framework.Dispatcher
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestEndOfContentRecommendationJob extends SparkSpec(null) {
   
     ignore should "execute the job and shouldn't throw any exception" in {

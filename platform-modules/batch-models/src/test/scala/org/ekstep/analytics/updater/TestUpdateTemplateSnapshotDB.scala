@@ -1,6 +1,7 @@
 package org.ekstep.analytics.updater
 
 import java.io.FileWriter
+
 import org.ekstep.analytics.framework.JobContext
 import org.ekstep.analytics.framework.util.CommonUtil
 import org.ekstep.analytics.framework.DataFilter
@@ -9,6 +10,7 @@ import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.framework.MeasuredEvent
 import org.ekstep.analytics.framework.MEEdata
 import org.ekstep.analytics.framework.MeasuredEvent
+
 import scala.collection.immutable.HashMap.HashTrieMap
 import org.ekstep.analytics.framework.Event
 import com.datastax.spark.connector._
@@ -17,7 +19,9 @@ import org.ekstep.analytics.framework.dispatcher.GraphQueryDispatcher
 import org.ekstep.analytics.util.Constants
 import com.datastax.spark.connector.cql.CassandraConnector
 import org.ekstep.analytics.model.SparkGraphSpec
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestUpdateTemplateSnapshotDB extends SparkGraphSpec(null) {
 
     override def beforeAll() {

@@ -5,7 +5,9 @@ package org.ekstep.analytics.model
 
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.framework.DerivedEvent
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestContentEditorUsageSummaryModel extends SparkSpec(null) {
 
     "ContentEditorUsageSummaryModel" should "generate 4 content editor usage summary events" in {

@@ -6,7 +6,9 @@ import org.ekstep.analytics.framework.Query
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.model.SparkGraphSpec
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestContentCreationMetricsUpdater extends SparkGraphSpec(null) {
 
     it should "execute ContentCreationMetricsUpdater job and won't throw any Exception" in {

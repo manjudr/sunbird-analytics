@@ -4,13 +4,13 @@
 package org.ekstep.analytics.updater
 
 import scala.reflect.runtime.universe
-
 import org.ekstep.analytics.framework.DerivedEvent
 import org.ekstep.analytics.model.SparkSpec
 import org.ekstep.analytics.util.Constants
 import com.datastax.spark.connector._
 import com.datastax.spark.connector.cql.CassandraConnector
-
+import org.scalatest.Ignore
+@Ignore @deprecated
 class TestUpdateContentEditorUsageDB extends SparkSpec(null) {
     
     "UpdateContentEditorUsageDB" should "update the content editor usage db and check the fields" in {

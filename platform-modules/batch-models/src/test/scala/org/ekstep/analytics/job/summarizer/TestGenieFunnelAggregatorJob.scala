@@ -6,7 +6,9 @@ import org.ekstep.analytics.framework.JobConfig
 import org.ekstep.analytics.framework.Fetcher
 import org.ekstep.analytics.framework.Query
 import org.ekstep.analytics.framework.Dispatcher
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestGenieFunnelAggregatorJob extends SparkSpec(null) {
   
     "GenieFunnelAggregatorJob" should "execute GenieFunnelModel and won't throw any Exception" in {

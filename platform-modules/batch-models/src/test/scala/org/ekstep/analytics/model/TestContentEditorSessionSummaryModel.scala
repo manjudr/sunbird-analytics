@@ -2,10 +2,12 @@ package org.ekstep.analytics.model
 
 import org.ekstep.analytics.creation.model.CreationEvent
 import org.ekstep.analytics.framework.util.JSONUtils
+import org.scalatest.Ignore
 
 /**
  * @author Jitendra Singh Sankhwar
  */
+@Ignore @deprecated
 class TestContentEditorSessionSummaryModel extends SparkSpec(null) {
 
     "ContentEditorSessionSummaryModel" should "generate session summary and pass all positive test cases" in {

@@ -9,7 +9,7 @@ import org.ekstep.analytics.vidyavaani.job._
 import org.ekstep.analytics.model.SparkGraphSpec
 import org.scalatest.Ignore
 
-@Ignore
+@Ignore @deprecated
 class TestContentSnapshotSummarizer extends SparkGraphSpec(null) {
   
     it should "execute ContentSnapshotSummarizer job and won't throw any Exception" in {

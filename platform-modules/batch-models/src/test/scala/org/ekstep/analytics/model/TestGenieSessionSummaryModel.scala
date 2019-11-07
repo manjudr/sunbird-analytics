@@ -12,7 +12,9 @@ import org.ekstep.analytics.util.Constants
 import com.datastax.spark.connector._
 import com.datastax.spark.connector.cql.CassandraConnector
 import org.ekstep.analytics.framework.LearnerProfile
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestGenieSessionSummaryModel extends SparkSpec(null) {
 
     "GenieSessionSummaryModel" should "generate content summary events" in {

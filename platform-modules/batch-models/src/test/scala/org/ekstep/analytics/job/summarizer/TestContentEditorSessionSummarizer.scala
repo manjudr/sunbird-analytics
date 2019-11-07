@@ -6,7 +6,9 @@ import org.ekstep.analytics.framework.JobConfig
 import org.ekstep.analytics.framework.Query
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.model.SparkSpec
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestContentEditorSessionSummarizer extends SparkSpec(null) {
 
     "ContentEditorSessionSummarizer" should "execute LearnerSessionSummary job and won't throw any Exception" in {

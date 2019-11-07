@@ -3,7 +3,9 @@ package org.ekstep.analytics.model
 import com.datastax.spark.connector.cql.CassandraConnector
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.util.Constants
+import org.junit.Ignore
 
+@Ignore
 class TestDeviceSummaryModel extends SparkSpec(null) {
 
     "DeviceSummaryModel" should "generate DeviceSummary events from a sample file and pass all positive test cases" in {

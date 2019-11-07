@@ -9,7 +9,9 @@ import org.ekstep.analytics.framework.Fetcher
 import org.ekstep.analytics.framework.Query
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.util.JSONUtils
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestAppUsageSummarizer extends SparkSpec(null) {
   
     "AppUsageSummarizer" should "execute AppUsageSummarizer job and won't throw any Exception" in {

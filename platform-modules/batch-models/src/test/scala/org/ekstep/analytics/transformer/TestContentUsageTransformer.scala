@@ -6,7 +6,9 @@ import com.datastax.spark.connector.cql.CassandraConnector
 import org.ekstep.analytics.util.Constants
 import com.datastax.spark.connector._
 import org.ekstep.analytics.model.ContentFeatures
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestContentUsageTransformer extends SparkSpec(null) {
 
     "ContentUsageTransformer" should "perform binning and outlier on CUS" in {

@@ -1,6 +1,7 @@
 package org.ekstep.analytics.updater
 
 import java.net.URI
+
 import scala.concurrent.Await
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration._
@@ -9,7 +10,9 @@ import org.ekstep.analytics.framework.conf.AppConf
 import org.ekstep.analytics.model.SparkSpec
 import com.pygmalios.reactiveinflux._
 import org.joda.time.DateTimeUtils
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestUpdateCreationMetricsDB extends SparkSpec(null) {
     
     ignore should "push data into influxDB" in {

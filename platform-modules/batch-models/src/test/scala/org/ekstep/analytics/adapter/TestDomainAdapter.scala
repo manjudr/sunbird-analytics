@@ -2,10 +2,12 @@ package org.ekstep.analytics.adapter
 
 import org.ekstep.analytics.model.BaseSpec
 import org.ekstep.analytics.framework.util.JSONUtils
+import org.scalatest.Ignore
 
 /**
  * @author Santhosh
  */
+@Ignore @deprecated
 class TestDomainAdapter extends BaseSpec {
 
     ignore should "return domain map" in {

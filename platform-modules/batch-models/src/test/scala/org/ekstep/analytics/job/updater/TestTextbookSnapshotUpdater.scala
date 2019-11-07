@@ -8,11 +8,13 @@ import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.updater.TextbookSnapshotSummary
 import org.apache.spark.rdd.RDD
+import org.scalatest.Ignore
 
 /**
  * @author mahesh
  */
 
+@Ignore @deprecated
 class TestTextbookSnapshotUpdater extends SparkGraphSpec(null) {
  	
 	"TextbookSnapshotUpdater" should "execute the job and shouldn't throw any exception" in {

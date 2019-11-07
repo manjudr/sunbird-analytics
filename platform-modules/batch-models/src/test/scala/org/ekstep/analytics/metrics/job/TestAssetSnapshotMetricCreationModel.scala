@@ -10,7 +10,9 @@ import org.ekstep.analytics.model.SparkSpec
 import org.joda.time.DateTime
 import com.datastax.spark.connector.cql.CassandraConnector
 import org.ekstep.analytics.updater.UpdateAssetSnapshotDB
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestAssetSnapshotMetricCreationModel extends SparkSpec(null) {
   
     "AssetSnapshotMetricCreationModel" should "execute AssetSnapshotMetricCreationModel successfully" in {

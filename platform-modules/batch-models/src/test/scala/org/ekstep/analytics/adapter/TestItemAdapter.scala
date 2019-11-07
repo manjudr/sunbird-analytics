@@ -2,10 +2,13 @@ package org.ekstep.analytics.adapter
 
 import org.ekstep.analytics.model.BaseSpec
 import org.ekstep.analytics.framework.exception.DataAdapterException
+import org.scalatest.Ignore
 
 /**
  * @author Santhosh
  */
+
+@Ignore @deprecated
 class TestItemAdapter extends BaseSpec {
     
     "ItemAdapter" should "return item concepts and max score" in {

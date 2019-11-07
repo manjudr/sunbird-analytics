@@ -7,11 +7,14 @@ import com.datastax.spark.connector.cql.CassandraConnector
 import org.ekstep.analytics.util.Constants
 import com.pygmalios.reactiveinflux._
 import java.net.URI
+
 import org.ekstep.analytics.framework.conf.AppConf
+
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration._
 import org.apache.commons.lang3.StringUtils
-
+import org.scalatest.Ignore
+@Ignore @deprecated
 class TestUpdateConceptSnapshotDB extends SparkSpec(null) {
   
     it should "update the concept snapshot updater db and check the updated fields" in {

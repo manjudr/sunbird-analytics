@@ -14,7 +14,8 @@ import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.framework.util.CommonUtil
 import org.ekstep.analytics.framework.Period
 import org.joda.time.format.DateTimeFormat
-
+import org.scalatest.Ignore
+@Ignore @deprecated
 class TestUpdatePublishPipelineSummary extends SparkSpec(null) {
 
   "UpdatePublishPipelineSummary" should "update the content_publish_fact table for DAY, WEEK, MONTH, YEAR" in {

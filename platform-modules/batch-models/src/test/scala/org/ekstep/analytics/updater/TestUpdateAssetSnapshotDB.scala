@@ -1,6 +1,7 @@
 package org.ekstep.analytics.updater
 
 import java.net.URI
+
 import scala.concurrent.ExecutionContext.Implicits.global
 import org.apache.commons.lang3.StringUtils
 import org.ekstep.analytics.framework.DerivedEvent
@@ -13,12 +14,16 @@ import com.datastax.spark.connector.cql.CassandraConnector
 import com.datastax.spark.connector.cql.CassandraConnector
 import com.pygmalios.reactiveinflux._
 import org.joda.time.DateTime
+
 import scala.concurrent.duration.Duration
 import org.joda.time.DateTimeUtils
 import org.ekstep.analytics.framework.conf.AppConf
 import org.ekstep.analytics.framework.util.JSONUtils
+import org.scalatest.Ignore
+
 import scala.concurrent.duration._
 
+@Ignore @deprecated
 class TestUpdateAssetSnapshotDB extends SparkSpec(null) {
 
     override def beforeAll() {

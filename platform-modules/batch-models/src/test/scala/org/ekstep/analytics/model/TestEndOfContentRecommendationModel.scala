@@ -3,7 +3,9 @@ package org.ekstep.analytics.model
 import com.datastax.spark.connector.cql.CassandraConnector
 import com.datastax.spark.connector._
 import org.ekstep.analytics.util.Constants
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestEndOfContentRecommendationModel extends SparkSpec(null) {
   
     ignore should "save scores to cassandra with filtering blacklisted contents" in {

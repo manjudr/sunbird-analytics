@@ -5,7 +5,9 @@ import org.ekstep.analytics.framework.LearnerProfile
 import com.datastax.spark.connector._
 import org.ekstep.analytics.framework.ProfileEvent
 import org.ekstep.analytics.framework.util.JSONUtils
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestUpdateLearnerProfileUpdateDB extends SparkSpec(null) {
 
     "UpdateLearnerProfileUpdateDB" should "update learner profile in learner db" in {

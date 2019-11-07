@@ -9,7 +9,9 @@ import org.ekstep.analytics.util.SessionBatchModel
 import org.apache.spark.rdd.RDD
 import org.apache.spark.SparkContext
 import org.ekstep.analytics.framework.DerivedEvent
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestAppUsageSummaryModel extends SparkSpec(null) {
 
     "AppUsageSummaryModel" should "generate 4 app usage summary events" in {

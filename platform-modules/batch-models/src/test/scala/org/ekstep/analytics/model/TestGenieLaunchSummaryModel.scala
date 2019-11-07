@@ -8,7 +8,9 @@ import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.util.CommonUtil
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.V3Event
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestGenieLaunchSummaryModel extends SparkSpec(null) {
 
     "GenieLaunchSummaryModel" should "generate genie summary events" in {

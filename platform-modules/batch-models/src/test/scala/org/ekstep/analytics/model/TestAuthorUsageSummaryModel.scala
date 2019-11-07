@@ -8,9 +8,11 @@ import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.util.CommonUtil
 import org.ekstep.analytics.framework.DerivedEvent
 import org.apache.spark.rdd.RDD
+import org.scalatest.Ignore
 /**
  * @author yuva
  */
+@Ignore @deprecated
 class TestAuthorUsageSummaryModel extends SparkSpec(null) {
 
     "AuthorUsageSummaryModel" should "generate metrics per author" in {

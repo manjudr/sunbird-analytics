@@ -8,9 +8,11 @@ import org.ekstep.analytics.util.Constants
 import org.ekstep.analytics.creation.model.CreationEvent
 import org.ekstep.analytics.framework.DerivedEvent
 import org.ekstep.analytics.framework.util.JSONUtils
+import org.scalatest.Ignore
 /**
  * @author yuva
  */
+@Ignore @deprecated
 class TestUpdateTextbookUsageDB extends SparkSpec(null) {
 
     override def beforeAll() {

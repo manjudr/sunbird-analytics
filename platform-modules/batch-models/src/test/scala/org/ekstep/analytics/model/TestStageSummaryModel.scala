@@ -4,7 +4,9 @@ import org.ekstep.analytics.framework.Event
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.framework.DerivedEvent
 import org.ekstep.analytics.framework.conf.AppConf
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestStageSummaryModel extends SparkSpec(null) {
 
     "StageSummaryModel" should "generate stage summaries" in {

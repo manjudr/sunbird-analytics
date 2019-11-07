@@ -8,7 +8,9 @@ import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.util.JSONUtils
 import com.datastax.spark.connector.cql.CassandraConnector
 import org.ekstep.analytics.framework.util.CommonUtil
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestDeviceRecommendationTrainingJob extends SparkSpec(null) {
   
     ignore should "execute the job and shouldn't throw any exception" in {

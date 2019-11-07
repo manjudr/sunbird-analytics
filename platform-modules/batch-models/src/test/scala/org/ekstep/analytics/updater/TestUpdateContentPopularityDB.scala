@@ -8,7 +8,9 @@ import com.datastax.spark.connector.cql.CassandraConnector
 import org.ekstep.analytics.framework.DerivedEvent
 import org.ekstep.analytics.util.ContentPopularitySummaryFact
 import org.joda.time.DateTime
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestUpdateContentPopularityDB extends SparkSpec(null) {
   
   override def beforeAll() {

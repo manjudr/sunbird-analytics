@@ -6,8 +6,11 @@ import com.datastax.spark.connector._
 import org.joda.time.DateTime
 import org.ekstep.analytics.framework.util.JSONUtils
 import com.datastax.spark.connector.cql.CassandraConnector
+import org.scalatest.Ignore
+
 import scala.collection.mutable.Buffer
 
+@Ignore @deprecated
 class TestLearnerProficiencySummaryModel extends SparkSpec(null) {
 
     "LearnerProficiencySummaryModel" should "check Proficiency and Model param should be updated in db" in {

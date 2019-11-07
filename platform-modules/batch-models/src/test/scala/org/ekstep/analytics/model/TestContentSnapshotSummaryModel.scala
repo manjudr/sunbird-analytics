@@ -12,7 +12,9 @@ import org.ekstep.analytics.framework.dispatcher.GraphQueryDispatcher
 import org.apache.commons.lang3.StringUtils
 import com.datastax.spark.connector.cql.CassandraConnector
 import com.datastax.spark.connector._
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestContentSnapshotSummaryModel extends SparkGraphSpec(null) {
 
     "ContentSnapshotSummaryModel" should "generate content snapshot summary events" in {

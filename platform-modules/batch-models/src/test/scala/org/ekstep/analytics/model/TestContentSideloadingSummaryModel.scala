@@ -7,7 +7,9 @@ import org.ekstep.analytics.framework.MeasuredEvent
 import com.datastax.spark.connector._
 import org.ekstep.analytics.util.Constants
 import org.ekstep.analytics.framework.V3Event
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestContentSideloadingSummaryModel extends SparkSpec(null) {
 
     "ContentSideloadingSummaryModel" should "generate content sideloading summary events" in {

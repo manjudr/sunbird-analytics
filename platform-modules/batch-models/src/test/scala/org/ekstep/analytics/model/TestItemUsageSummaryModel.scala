@@ -11,8 +11,11 @@ import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.OutputDispatcher
 import org.ekstep.analytics.updater.UpdateItemSummaryDB
 import java.io.File
-import org.ekstep.analytics.framework.InCorrectRes
 
+import org.ekstep.analytics.framework.InCorrectRes
+import org.scalatest.Ignore
+
+@Ignore @deprecated
 class TestItemUsageSummaryModel extends SparkSpec(null) {
 
     "ItemSummaryModel" should "generates item summary and test all the fields" in {

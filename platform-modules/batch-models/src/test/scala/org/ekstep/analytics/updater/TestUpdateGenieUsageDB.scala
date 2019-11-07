@@ -8,7 +8,9 @@ import org.joda.time.DateTime
 import com.datastax.spark.connector._
 import org.ekstep.analytics.util.Constants
 import com.datastax.spark.connector.cql.CassandraConnector
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestUpdateGenieUsageDB extends SparkSpec(null) {
 
     "UpdateGenieUsageDB" should "update the genie usage db and check the fields" in {

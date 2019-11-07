@@ -6,8 +6,11 @@ import org.ekstep.analytics.framework.util.JSONUtils
 import com.datastax.spark.connector.cql.CassandraConnector
 import org.ekstep.analytics.framework.util.CommonUtil
 import java.io.File
-import org.joda.time.DateTime
 
+import org.joda.time.DateTime
+import org.scalatest.Ignore
+
+@Ignore @deprecated
 class TestDeviceRecommendationTrainingModel extends SparkSpec(null) {
 
     ignore should "apply num_contents>5 filter, generate libsvm files, save all files in dataTime folder structure except feature file and save model to s3" in {

@@ -11,7 +11,9 @@ import org.ekstep.analytics.util.ItemUsageSummaryFact
 import com.datastax.spark.connector.cql.CassandraConnector
 import org.apache.commons.lang3.StringUtils
 import org.ekstep.analytics.framework.util.JSONUtils
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestUpdateItemSummaryDB extends SparkSpec(null) {
 
     "UpdateItemSummaryDB" should "update the item usage summary db and check the all fields" in {

@@ -4,7 +4,7 @@ import org.apache.spark.rdd.RDD
 import org.ekstep.analytics.framework._
 import org.ekstep.analytics.framework.util.JSONUtils
 import com.datastax.spark.connector.cql.CassandraConnector
-import org.apache.spark.ml.linalg.{ Vector, Vectors, DenseVector }
+import org.apache.spark.ml.linalg.{DenseVector, Vector, Vectors}
 import org.ekstep.analytics.framework.util.CommonUtil
 import org.ekstep.analytics.adapter.ContentModel
 import org.apache.spark.SparkContext
@@ -13,12 +13,15 @@ import org.ekstep.analytics.util.ContentUsageSummaryFact
 import org.ekstep.analytics.updater.DeviceSpec
 import org.ekstep.analytics.job.summarizer.DeviceRecommendationTrainingJob
 import java.io.File
+
 import com.datastax.spark.connector.cql.CassandraConnector
 import com.datastax.spark.connector._
 import org.ekstep.analytics.util.Constants
 import org.ekstep.analytics.adapter.ContentAdapter
 import org.ekstep.analytics.framework.conf.AppConf
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestDeviceRecommendationScoringModel extends SparkSpec(null) {
     
     ignore should "load model with zero pairwise interactions and generate scores" in {

@@ -4,15 +4,18 @@ import org.ekstep.analytics.model.BaseSpec
 import org.ekstep.analytics.framework.Response
 import org.ekstep.analytics.framework.exception.DataAdapterException
 import org.ekstep.analytics.framework.DomainResponse
+import org.scalatest.Ignore
 
 /**
  * @author Santhosh
  */
 
+@Ignore @deprecated
 object SampleBaseAdapter extends BaseAdapter {
     
 }
 
+@Ignore @deprecated
 class TestBaseAdapter extends BaseSpec {
     
     "BaseAdapter" should "test all the methods" in {

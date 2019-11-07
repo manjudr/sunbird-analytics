@@ -11,7 +11,9 @@ import org.ekstep.analytics.framework.OutputDispatcher
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.MeasuredEvent
 import org.ekstep.analytics.framework.util.CommonUtil
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestLearnerActivitySummaryModel extends SparkSpec(null) {
 
     "LearnerActivitySummaryModel" should "generate LearnerActivitySummarizer events from a sample file " in {

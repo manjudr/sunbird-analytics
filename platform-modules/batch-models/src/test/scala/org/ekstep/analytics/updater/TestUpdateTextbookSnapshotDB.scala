@@ -17,7 +17,7 @@ import org.scalatest.Ignore
 /**
  * @author Mahesh Kumar Gangula
  */
-@Ignore
+@Ignore @deprecated
 class TestUpdateTextbookSnapshotDB extends SparkGraphSpec(null) {
 
 	

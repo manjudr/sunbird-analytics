@@ -6,7 +6,9 @@ import org.ekstep.analytics.framework.Fetcher
 import org.ekstep.analytics.framework.Query
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.util.JSONUtils
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestGenieLaunchV1Summarizer extends SparkSpec(null) {
   
     "GenieLaunchSummarizer" should "execute GenieLunchSummary and won't throw any Exception" in {

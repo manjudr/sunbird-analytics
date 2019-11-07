@@ -4,11 +4,12 @@ import org.apache.spark.SparkContext
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.framework.{DeviceProfileModel, JobConfig, OutputDispatcher}
 import org.scalamock.scalatest.MockFactory
+import org.scalatest.Ignore
 
 import scala.collection.mutable.ListBuffer
 import scala.io.Source
 
-
+@Ignore @deprecated
 class TestExperimentDefinition  extends SparkSpec(null) with MockFactory {
 
   var schema: ListBuffer[ExperimentDefinitionMetadata] = ListBuffer()

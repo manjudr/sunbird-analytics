@@ -5,9 +5,11 @@ import org.ekstep.analytics.framework.DerivedEvent
 import org.ekstep.analytics.framework.util.CommonUtil
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.framework.MeasuredEvent
+import org.scalatest.Ignore
 /**
  * @author yuva
  */
+@Ignore @deprecated
 class TestTextbookSessionSummaryModel extends SparkSpec(null) {
 
     "TextbookSessionSummaryModel" should "compute  session metrics if env data as textbook is present" in {

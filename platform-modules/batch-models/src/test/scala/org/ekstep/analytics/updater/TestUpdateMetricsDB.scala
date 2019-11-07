@@ -7,7 +7,8 @@ import org.ekstep.analytics.framework.DerivedEvent
 import com.datastax.spark.connector._
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.util.WorkFlowUsageSummaryFact
-
+import org.scalatest.Ignore
+@Ignore @deprecated
 class TestUpdateMetricsDB extends SparkSpec(null) {
 
   override def beforeAll() {

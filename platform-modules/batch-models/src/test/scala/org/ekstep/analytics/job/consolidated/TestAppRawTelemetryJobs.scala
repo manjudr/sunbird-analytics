@@ -6,7 +6,9 @@ import org.ekstep.analytics.framework.Fetcher
 import org.ekstep.analytics.framework.Query
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.util.JSONUtils
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestAppRawTelemetryJobs extends SparkSpec(null) {
   
     "AppRawTelemetryJobs" should "execute all app raw telemetry jobs" in {

@@ -7,6 +7,7 @@ import org.ekstep.analytics.framework.Query
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.util.JSONUtils
 
+
 class TestRawTelemetryJobs extends SparkSpec(null) {
      
     "RawTelemetryJobs" should "execute all raw telemetry jobs" in {

@@ -6,7 +6,9 @@ import org.ekstep.analytics.model.SparkSpec
 import org.ekstep.analytics.framework.Fetcher
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.framework.Dispatcher
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestGenieFunnelSummarizer extends SparkSpec(null) {
     
   "GenieFunnelSummarizer" should "execute GenieFunnelModel and won't throw any Exception" in {

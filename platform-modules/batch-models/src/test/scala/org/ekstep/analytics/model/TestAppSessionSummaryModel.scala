@@ -11,7 +11,9 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.SparkContext
 import org.ekstep.analytics.framework.Event
 import org.ekstep.analytics.framework.V3Event
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestAppSessionSummaryModel extends SparkSpec(null) {
 
     "AppSessionSummaryModel" should "generate 1 app session summary events having CE_START & CE_END" in {

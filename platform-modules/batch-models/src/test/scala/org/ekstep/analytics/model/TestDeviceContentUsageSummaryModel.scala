@@ -7,7 +7,8 @@ import com.datastax.spark.connector.cql.CassandraConnector
 import org.ekstep.analytics.util.Constants
 import com.datastax.spark.connector._
 import org.ekstep.analytics.framework.V3Event
-
+import org.scalatest.Ignore
+@Ignore @deprecated
 class TestDeviceContentUsageSummaryModel extends SparkSpec(null) {
 
     it should "generate device content summary events" in {

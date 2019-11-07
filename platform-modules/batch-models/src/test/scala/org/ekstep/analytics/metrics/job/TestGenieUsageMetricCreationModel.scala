@@ -10,7 +10,9 @@ import org.ekstep.analytics.model.SparkSpec
 import org.joda.time.DateTime
 import org.ekstep.analytics.updater.UpdateGenieUsageDB
 import com.datastax.spark.connector.cql.CassandraConnector
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestGenieUsageMetricCreationModel extends SparkSpec(null) {
   
     "GenieUsageMetricCreationModel" should "execute GenieUsageMetricCreationModel successfully" in {

@@ -1,10 +1,12 @@
 package org.ekstep.analytics.model
 
-import org.ekstep.analytics.framework.V3Event;
+import org.ekstep.analytics.framework.V3Event
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.framework.MeasuredEvent
 import org.ekstep.analytics.creation.model.CreationEvent
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestPublishPipelineSummaryModel extends SparkSpec(null) {
 
   "PipelineSummaryModel" should "generate pipeline summary" in {

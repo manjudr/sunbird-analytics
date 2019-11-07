@@ -9,7 +9,9 @@ import org.ekstep.analytics.framework.util.CommonUtil
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.DataFetcher
 import org.ekstep.analytics.framework._
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestEOCRecommendationFunnelModel extends SparkSpec(null) {
 
     "EOCRecommendationFunnelModel" should "generate values if event list having GE_SERVICE_API_CALL but eid not equals to contentid" in {

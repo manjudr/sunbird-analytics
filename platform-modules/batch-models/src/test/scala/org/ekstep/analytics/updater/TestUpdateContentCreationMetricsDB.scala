@@ -10,7 +10,8 @@ import org.ekstep.analytics.framework.util.JSONUtils
 import org.apache.commons.lang3.StringUtils
 import org.ekstep.analytics.creation.model.CreationEvent
 import org.ekstep.analytics.framework.conf.AppConf
-
+import org.scalatest.Ignore
+@Ignore @deprecated
 class TestUpdateContentCreationMetricsDB extends SparkGraphSpec(null) {
 
 	"UpdateContentCreationMetricsDB" should "take the snapshot data for the content having no plugins and no tags update in DB" in {

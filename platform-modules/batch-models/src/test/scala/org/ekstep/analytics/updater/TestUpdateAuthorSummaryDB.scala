@@ -9,7 +9,8 @@ import com.datastax.spark.connector._
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.apache.commons.lang3.StringUtils
 import org.ekstep.analytics.framework.DerivedEvent
-
+import org.scalatest.Ignore
+@Ignore @deprecated
 class TestUpdateAuthorSummaryDB extends SparkSpec(null) {
 
     "TestUpdateAuthorSummaryDB" should "update author metrics DB for a sample input data" in {

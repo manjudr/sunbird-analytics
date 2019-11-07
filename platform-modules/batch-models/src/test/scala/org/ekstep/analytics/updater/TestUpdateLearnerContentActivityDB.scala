@@ -6,6 +6,9 @@ import org.ekstep.analytics.framework.DerivedEvent
 import com.datastax.spark.connector._
 import java.util.UUID
 
+import org.scalatest.Ignore
+
+@Ignore @deprecated
 class TestUpdateLearnerContentActivityDB extends SparkSpec(null) {
 
     "UpdateLearnerContentActivityDB" should " write activities into learneractivity table and check the fields" in {

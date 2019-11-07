@@ -6,7 +6,9 @@ import org.ekstep.analytics.framework.Query
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.model.SparkSpec
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestLearnerContentActivityUpdater extends SparkSpec(null) {
 
     "LearnerContentActivityUpdater" should "execute the job and shouldn't throw any exception" in {

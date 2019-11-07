@@ -11,6 +11,7 @@ import org.joda.time.DateTime
 /**
  * @author Santhosh
  */
+
 class TestUpdateContentModel extends SparkSpec(null) {
 
     "UpdateContentModel" should "populate content usage and popularity metrics in content model" in {

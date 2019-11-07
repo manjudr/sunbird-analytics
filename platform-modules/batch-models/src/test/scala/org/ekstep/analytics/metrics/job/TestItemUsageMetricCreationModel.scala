@@ -10,7 +10,9 @@ import org.ekstep.analytics.model.SparkSpec
 import org.joda.time.DateTime
 import org.ekstep.analytics.updater.UpdateItemSummaryDB
 import com.datastax.spark.connector.cql.CassandraConnector
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestItemUsageMetricCreationModel extends SparkSpec(null) {
   
     "ItemUsageMetricCreationModel" should "execute ItemUsageMetricCreationModel successfully" in {

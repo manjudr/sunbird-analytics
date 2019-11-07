@@ -1,6 +1,6 @@
 package org.ekstep.analytics.model
 
-import org.scalatest.BeforeAndAfterEach
+import org.scalatest.{BeforeAndAfterEach, Ignore}
 import com.datastax.spark.connector._
 import org.joda.time.DateTime
 import org.joda.time.DateTimeZone
@@ -12,6 +12,7 @@ import com.datastax.spark.connector.cql.CassandraConnector
 import org.ekstep.analytics.framework.RegisteredTag
 import org.ekstep.analytics.framework.V3Event
 
+@Ignore @deprecated
 class TestContentPopularitySummaryModel extends SparkSpec(null) with BeforeAndAfterEach {
 	
 	val tagList = Array(

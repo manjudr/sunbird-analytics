@@ -1,6 +1,7 @@
 package org.ekstep.analytics.model
 
 import java.io.FileWriter
+
 import org.ekstep.analytics.framework.util.CommonUtil
 import org.ekstep.analytics.framework.MeasuredEvent
 import org.ekstep.analytics.framework.util.JSONUtils
@@ -16,10 +17,12 @@ import org.ekstep.analytics.util.DerivedEvent
 import org.ekstep.analytics.framework.DataFetcher
 import org.ekstep.analytics.framework.Fetcher
 import org.ekstep.analytics.framework.V3Event
+import org.scalatest.Ignore
 
 /**
  * @author Santhosh
  */
+@Ignore @deprecated
 class TestLearnerSessionSummaryModel extends SparkSpec(null) {
 
     "LearnerSessionSummaryModel" should "generate session summary and pass all positive test cases" in {

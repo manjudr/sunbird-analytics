@@ -6,6 +6,7 @@ import org.ekstep.analytics.framework.DerivedEvent
 import org.ekstep.analytics.framework.util.CommonUtil
 import org.ekstep.analytics.framework.OutputDispatcher
 import org.ekstep.analytics.framework.Dispatcher
+import org.scalatest.Ignore
 
 case class TestBEEventEks(rid: Option[String], duration: Option[Int], status: Option[Int], method: Option[String])
 case class TestBEEventEdata(eks: TestBEEventEks)
@@ -13,7 +14,7 @@ case class TestBEEvent(eid: String, edata: TestBEEventEdata)
 
 case class LETransactionData(addedRelations: Array[AnyRef], removedRelations: Array[AnyRef], properties: Map[String, AnyRef])
 case class LearningEvent(objectType: String, transactionData: LETransactionData)
-
+@Ignore @deprecated
 class TestAnalyzeLanguageLogs extends SparkSpec(null) {
 
     ignore should "generate access summaries" in {

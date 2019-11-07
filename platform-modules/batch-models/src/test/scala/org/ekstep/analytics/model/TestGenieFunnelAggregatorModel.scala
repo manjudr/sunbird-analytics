@@ -2,7 +2,9 @@ package org.ekstep.analytics.model
 
 import org.ekstep.analytics.framework.DerivedEvent
 import org.ekstep.analytics.framework.util.JSONUtils
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestGenieFunnelAggregatorModel extends SparkSpec(null) {
 
     "GenieFunnelAggregatorModel" should "generates aggregated funnel summary" in {

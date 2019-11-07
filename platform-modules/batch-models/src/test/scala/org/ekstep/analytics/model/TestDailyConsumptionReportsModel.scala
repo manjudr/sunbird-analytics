@@ -3,7 +3,9 @@ package org.ekstep.analytics.model
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.framework.{Dispatcher, Fetcher, JobConfig}
 import org.ekstep.analytics.job.ConsumptionReportsJob
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestDailyConsumptionReportsModel extends SparkSpec(null) {
 
   it should "Should run successfully" in {

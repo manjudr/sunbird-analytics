@@ -6,7 +6,9 @@ import com.datastax.spark.connector._
 import com.datastax.spark.connector.cql.CassandraConnector
 import org.ekstep.analytics.util.Constants
 import org.ekstep.analytics.framework.conf.AppConf
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestContentVectorsModel extends SparkSpec(null) {
 
     ignore should "update content_to_vec table and generates enriched json for 10 contents" in {

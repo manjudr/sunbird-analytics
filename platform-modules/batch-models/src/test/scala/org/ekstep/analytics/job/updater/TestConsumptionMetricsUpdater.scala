@@ -8,15 +8,20 @@ import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.framework.conf.AppConf
 import org.ekstep.analytics.util.Constants
+
 import scala.concurrent.Await
 import scala.concurrent.ExecutionContext.Implicits.global
 import com.datastax.spark.connector.cql.CassandraConnector
 import java.net.URI
+
 import com.pygmalios.reactiveinflux._
 import org.joda.time.DateTime
+
 import scala.concurrent.duration._
 import org.joda.time.DateTimeUtils
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestConsumptionMetricsUpdater extends SparkSpec(null) {
 
     override def beforeAll() {

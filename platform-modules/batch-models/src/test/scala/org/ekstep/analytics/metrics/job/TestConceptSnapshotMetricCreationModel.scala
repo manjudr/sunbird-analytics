@@ -10,7 +10,9 @@ import org.ekstep.analytics.model.SparkSpec
 import org.joda.time.DateTime
 import com.datastax.spark.connector.cql.CassandraConnector
 import org.ekstep.analytics.updater.UpdateConceptSnapshotDB
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestConceptSnapshotMetricCreationModel extends SparkSpec(null) {
   
     "ConceptSnapshotMetricCreationModel" should "execute ConceptSnapshotMetricCreationModel successfully" in {

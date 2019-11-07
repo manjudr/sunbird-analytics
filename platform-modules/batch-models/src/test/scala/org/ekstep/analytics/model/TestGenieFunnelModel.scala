@@ -5,6 +5,7 @@ import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.framework.OtherStage
 import org.ekstep.analytics.framework.util.CommonUtil
 import java.io.File
+
 import org.ekstep.analytics.framework.OutputDispatcher
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.DataFilter
@@ -14,7 +15,9 @@ import org.ekstep.analytics.framework.Query
 import org.ekstep.analytics.framework.Event
 import org.ekstep.analytics.framework.Fetcher
 import org.ekstep.analytics.framework.DataFetcher
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestGenieFunnelModel extends SparkSpec(null) {
 
     ignore should "Generates Funnel Summary from S3" in {

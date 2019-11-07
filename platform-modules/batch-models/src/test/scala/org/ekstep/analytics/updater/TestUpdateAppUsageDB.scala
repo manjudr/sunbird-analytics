@@ -11,7 +11,8 @@ import org.joda.time.DateTime
 import com.datastax.spark.connector._
 import org.ekstep.analytics.util.Constants
 import com.datastax.spark.connector.cql.CassandraConnector
-
+import org.scalatest.Ignore
+@Ignore @deprecated
 class TestUpdateAppUsageDB extends SparkSpec(null) {
   
     "UpdateAppUsageDB" should "update the app usage db and check the fields" in {

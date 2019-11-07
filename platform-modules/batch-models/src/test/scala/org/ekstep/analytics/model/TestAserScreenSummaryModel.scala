@@ -1,6 +1,7 @@
 package org.ekstep.analytics.model
 
 import java.io.FileWriter
+
 import org.ekstep.analytics.framework.JobContext
 import org.ekstep.analytics.framework.util.CommonUtil
 import org.ekstep.analytics.framework.DataFilter
@@ -9,9 +10,12 @@ import org.ekstep.analytics.framework.util.JSONUtils
 import org.ekstep.analytics.framework.MeasuredEvent
 import org.ekstep.analytics.framework.MEEdata
 import org.ekstep.analytics.framework.MeasuredEvent
+
 import scala.collection.immutable.HashMap.HashTrieMap
 import org.ekstep.analytics.framework.Event
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestAserScreenSummaryModel extends SparkSpec(null) {
 
     //-----test1-------

@@ -6,7 +6,9 @@ import org.ekstep.analytics.framework.Query
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.model.SparkSpec
 import org.ekstep.analytics.framework.util.JSONUtils
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestStageSummarizer extends SparkSpec(null) {
     
       "ItemSummarizer" should "execute ItemSummary job and won't throw any Exception" in {

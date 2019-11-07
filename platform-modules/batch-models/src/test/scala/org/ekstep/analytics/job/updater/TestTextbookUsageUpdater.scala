@@ -6,10 +6,12 @@ import org.ekstep.analytics.framework.Fetcher
 import org.ekstep.analytics.framework.Query
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.util.JSONUtils
+import org.scalatest.Ignore
 
 /**
  * @author yuva
  */
+@Ignore @deprecated
 class TestTextbookUsageUpdater extends SparkSpec(null) {
   
     it should "execute the job and shouldn't throw any exception" in {

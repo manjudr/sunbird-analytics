@@ -8,7 +8,9 @@ import org.ekstep.analytics.util.Constants
 import com.datastax.spark.connector._
 import org.ekstep.analytics.framework.DerivedEvent
 import org.ekstep.analytics.framework.Event
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestDeviceContentUsageTransformer extends SparkSpec(null) {
 
     "DeviceContentUsageTransformer" should "perform binning and outlier on DCUS" in {

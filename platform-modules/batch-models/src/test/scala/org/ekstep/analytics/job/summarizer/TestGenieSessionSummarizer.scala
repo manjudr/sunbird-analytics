@@ -6,7 +6,9 @@ import org.ekstep.analytics.framework.Fetcher
 import org.ekstep.analytics.framework.Query
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.util.JSONUtils
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestGenieSessionSummarizer extends SparkSpec(null) {
   
     "GenieUsageSessionSummarizer" should "execute GenieUsageSummary and won't throw any Exception" in {

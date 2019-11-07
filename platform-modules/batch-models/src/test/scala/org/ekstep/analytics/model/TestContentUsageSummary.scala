@@ -6,7 +6,9 @@ import org.ekstep.analytics.framework.OutputDispatcher
 import org.ekstep.analytics.framework.Dispatcher
 import org.ekstep.analytics.framework.util.CommonUtil
 import org.ekstep.analytics.model.deprecated.ContentUsageSummary
+import org.scalatest.Ignore
 
+@Ignore @deprecated
 class TestContentUsageSummary extends SparkSpec(null) {
 
     it should "generate content summary events where timeSpent=0 and noOfInteractEvents=0 in the input data" in {
