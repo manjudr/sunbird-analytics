@@ -146,7 +146,8 @@ object CommonUtil {
     val accName = AppConf.getStorageKey("azure")
     val accKey = AppConf.getStorageSecret("azure")
     sc.hadoopConfiguration.set("fs.azure", "org.apache.hadoop.fs.azure.NativeAzureFileSystem")
-    sc.hadoopConfiguration.set("fs.azure.account.key." + accName + ".blob.core.windows.net", accKey)
+   // sc.hadoopConfiguration.set("fs.azure.account.key." + accName + ".blob.core.windows.net", accKey)
+    sc.hadoopConfiguration.set("fs.azure.sas." + accName + ".blob.core.windows.net", accKey)
   }
 
   def closeSparkContext()(implicit sc: SparkContext) {

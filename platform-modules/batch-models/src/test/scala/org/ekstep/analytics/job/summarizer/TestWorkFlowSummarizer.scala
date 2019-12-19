@@ -11,7 +11,10 @@ class TestWorkFlowSummarizer extends SparkSpec(null) {
   
     "WorkFlowSummarizer" should "execute WorkFlowSummarizer job and won't throw any Exception" in {
 
-        val config = JobConfig(Fetcher("local", None, Option(Array(Query(None, None, None, None, None, None, None, None, None, Option("src/test/resources/workflow-summary/test-data1.log"))))), null, null, "org.ekstep.analytics.model.WorkFlowSummary", None, Option(Array(Dispatcher("console", Map("printEvent" -> false.asInstanceOf[AnyRef])))), Option(10), Option("TestWorkFlowSummarizer"), Option(true))
+        val config = JobConfig(Fetcher("azure", None, Option(Array(Query(Option("dev-data-store"), Option("unique/"), None, Option("2019-10-17"), Option(0), None, None, None, None, None)))), None, null, "org.ekstep.analytics.model.WorkFlowSummary", None, Option(Array(Dispatcher("file", Map("file" -> "output.log")))), Option(10), Option("TestWorkFlowSummarizer"), Option(true))
+
+
+        //val config = JobConfig(Fetcher("local", None, Option(Array(Query(None, None, None, None, None, None, None, None, None, Option("src/test/resources/workflow-summary/test-data1.log"))))), null, null, "org.ekstep.analytics.model.WorkFlowSummary", None, Option(Array(Dispatcher("console", Map("printEvent" -> false.asInstanceOf[AnyRef])))), Option(10), Option("TestWorkFlowSummarizer"), Option(true))
         WorkFlowSummarizer.main(JSONUtils.serialize(config))(Option(sc));
     }
 }
