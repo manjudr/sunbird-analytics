@@ -29,7 +29,7 @@
 		<repository>
 			<id>ing-bank</id>
 			<name>Ing-bank Repo</name>
-			<url>https://oss.sonatype.org/content/repositories/orgsunbird-1073</url>
+			<url>https://oss.sonatype.org/content/repositories/orgsunbird-1074</url>
 		</repository>
 		<repository>
 			<id>jcenter-repo</id>
@@ -219,8 +219,8 @@
 			<groupId>org.sunbird</groupId>
 			<artifactId>cloud-store-sdk</artifactId>
 			<version>1.2.7</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/cloud-store-sdk-1.2.7.jar</systemPath>
+			<!--<scope>system</scope>-->
+			<!--<systemPath>${project.basedir}/lib/cloud-store-sdk-1.2.7.jar</systemPath>-->
 			<exclusions>
 				<exclusion>
 					<groupId>com.microsoft.azure</groupId>
